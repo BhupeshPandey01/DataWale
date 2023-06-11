@@ -1,0 +1,109 @@
+  /*  Signup-box    */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background: linear-gradient(#141e30, #243b55);
+}
+
+.signup-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: rgba(0,0,0,.5);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-bottom: 200px;
+}
+footer{
+	margin-top: 650px;
+}
+
+h2{
+	padding: 0;
+	color: #03e9f4;
+	text-align: center;
+	font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: underline;
+	margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.user-box{
+	position: relative;
+}
+
+input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+}
+
+.label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	color: cadetblue;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.signup-box .user-box input:focus ~ label,
+.signup-box .user-box input:valid ~ label {
+	top: -30px;
+	left: 10px;
+	color: #03e9f4;
+	font-size: 1em;
+}
+
+.signup-box form .a {
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 21px;
+    font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 20px;
+	letter-spacing: 4px;
+	background: #03e9f4;
+	color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 5px #03e9f4,
+	            0 0 25px#03e9f4,
+				0 0 50px#03e9f4,
+				0 0 100px #03e9f4,;
+	margin-bottom: -20px;
+}
+
+.signup-box .a:hover {
+	background: green;
+	color: black;
+	border-radius: 15px;
+}
+
